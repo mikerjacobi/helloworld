@@ -1,1 +1,1 @@
-web: jacobi-helloworld
+web: helloworld
