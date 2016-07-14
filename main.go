@@ -11,8 +11,8 @@ func main() {
 	fmt.Println("starting server")
 
 	http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Printf("req rcv\n")
-		fmt.Fprintf(w, "bar\n")
+		fmt.Printf("req rcv2\n")
+		fmt.Fprintf(w, "bar2\n")
 	})
 
 	log.Fatal(http.ListenAndServe("0.0.0.0:"+os.Getenv("PORT"), nil))
